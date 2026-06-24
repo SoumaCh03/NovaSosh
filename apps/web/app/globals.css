@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #05070f;
+  --foreground: #f1f5f9;
+  
+  --surface: #0a0d18;
+  --surface-hover: #121727;
+  --elevated: #151b2e;
+  --border: #1e293b;
+  
+  --primary-text: #f8fafc;
+  --secondary-text: #94a3b8;
+  --muted: #64748b;
+  
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
+  --overlay: rgba(0, 0, 0, 0.7);
+}
+
+.light {
+  color-scheme: light;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --elevated: #ffffff;
+  --border: #e2e8f0;
+  
+  --primary-text: #0f172a;
+  --secondary-text: #475569;
+  --muted: #94a3b8;
+  
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  
+  --overlay: rgba(15, 23, 42, 0.35);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #05070f;
+  --foreground: #f1f5f9;
+  
+  --surface: #0a0d18;
+  --surface-hover: #121727;
+  --elevated: #151b2e;
+  --border: #1e293b;
+  
+  --primary-text: #f8fafc;
+  --secondary-text: #94a3b8;
+  --muted: #64748b;
+  
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
+  --overlay: rgba(0, 0, 0, 0.7);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-elevated: var(--elevated);
+  --color-border-token: var(--border);
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+  --color-muted-token: var(--muted);
+  --color-accent-token: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-success-token: var(--success);
+  --color-warning-token: var(--warning);
+  --color-danger-token: var(--danger);
+  --color-overlay-token: var(--overlay);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              color 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
